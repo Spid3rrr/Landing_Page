@@ -2,56 +2,56 @@ import {
   EmojiHappyIcon,
   ChartSquareBarIcon,
   CursorClickIcon,
-  DeviceMobileIcon,
   AdjustmentsIcon,
-  SunIcon,
+  LightningBoltIcon,
+  DeviceMobileIcon,
 } from "@heroicons/react/outline";
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Taking your business to the next level",
+  desc: "Our innovative technology solutions are designed to give you a competitive edge in today's fast-paced digital landscape.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Understand Your Customers",
+      desc: "Easily analyze your customer needs to adapt to the market and provide your customers with personalized experiences that meet their unique needs.",
       icon: <EmojiHappyIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Make Data-Driven Decisions",
+      desc: "Get real-time insights and predictive analytics that help you make informed decisions. Our platform uses powerful algorithms to turn data into actionable intelligence.",
       icon: <ChartSquareBarIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Stay Ahead of the Curve",
+      desc: "Keep up with the latest technological advancements and stay ahead of the competition. Our team of experts is constantly innovating to bring you the best solutions on the market",
       icon: <CursorClickIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Welcome to a world of limitless possibilities",
+  desc: "At 4A4B, we believe that technology should empower you to achieve your goals, not hold you back. That's why we've created a suite of cutting-edge products and services that bring together the latest advancements in AI, machine learning, and data analytics.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DeviceMobileIcon />,
+      title: "Boost Your Productivity",
+      desc: "Say goodbye to manual processes and hello to lightning-fast results. Our technology automates repetitive tasks, freeing up your time to focus on what really matters.",
+      icon: <LightningBoltIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Customize to Your Needs",
+      desc: "Our technology is designed to be flexible and adaptable to your unique requirements. Whether you need a customized dashboard or specific integrations, we'll work with you to create a solution that fits your needs.",
       icon: <AdjustmentsIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Always Connected",
+      desc: "Stay connected and in control no matter where you are. Our technology enables you to access your data, insights, and tools from anywhere, at any time. Whether you're in the office, on the go, or working remotely, you'll have everything you need to get the job done. With 4A4B, you're always in the loop and always in control.",
+      icon: <DeviceMobileIcon />,
     },
   ],
 };

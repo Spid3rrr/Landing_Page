@@ -4,7 +4,7 @@ import { Disclosure } from "@headlessui/react";
 
 export default function Navbar() {
   const navigation = [
-    "Product",
+    "Products",
     "Features",
     "Pricing",
     "Company",
@@ -13,24 +13,24 @@ export default function Navbar() {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+      <nav className="container relative flex flex-wrap items-center justify-between p-4 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (
             <>
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
-                  <a className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
+                  <a className="flex items-center space-x-2 text-xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
                       <img
-                        src="/img/logo.svg"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        src="/img/logo.png"
+                        alt="AB Logo"
+                        width="128"
+                        height="128"
+                        className="w-24"
                       />
                     </span>
-                    <span>Nextly</span>
+                    <span>4A4B Technologies</span>
                   </a>
                 </Link>
 
@@ -84,7 +84,8 @@ export default function Navbar() {
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
                 <Link href="/">
-                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800">
+                  <a className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:hover:text-indigo-500 dark:text-gray-200 hover:text-indigo-500 "> 
+                  {/* FOCUS EFFECTS : focus:text-indigo-500 focus:bg-indigo-100  focus:outline-none dark:focus:bg-gray-800 dark:focus:text-indigo-500 */}
                     {menu}
                   </a>
                 </Link>

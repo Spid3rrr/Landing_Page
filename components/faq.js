@@ -35,21 +35,21 @@ export default function Faq() {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "What makes 4A4B different from other technology companies",
+    answer: "4A4B uses cutting-edge technology and innovative algorithms to provide customized solutions that meet the unique needs of our customers. Our team of experts is dedicated to constant innovation, ensuring that our products and services are always at the forefront of technological advancements",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Is 4A4B user-friendly?",
+    answer: "Absolutely! We've designed our platform to be intuitive and user-friendly, so you can get up and running quickly and easily. Whether you're a tech expert or a newcomer, you'll find that 4A4B is simple to use and provides real results.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Can 4A4B integrate with my existing systems?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Yes, 4A4B can easily integrate with your existing systems, providing a seamless and efficient solution for your business. Our team of experts can help you with the integration process, ensuring a smooth transition to our platform.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "What kind of support does 4A4B offer?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "4A4B offers 24/7 support to ensure that you have access to the help you need, when you need it. Our knowledgeable support team is always available to answer your questions and assist you in any way they can.",
   },
 ];

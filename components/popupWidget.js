@@ -19,31 +19,35 @@ export default function PopupWidget() {
 
   const onSubmit = async (data, e) => {
     console.log(data);
-    await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
-        let json = await response.json();
-        if (json.success) {
-          setIsSuccess(true);
-          setMessage(json.message);
-          e.target.reset();
-          reset();
-        } else {
-          setIsSuccess(false);
-          setMessage(json.message);
-        }
-      })
-      .catch((error) => {
-        setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
-        console.log(error);
-      });
+    setIsSuccess(true);
+    //setMessage(json.message);
+    e.target.reset();
+    reset();
+    // await fetch("https://api.web3forms.com/submit", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //   },
+    //   body: JSON.stringify(data, null, 2),
+    // })
+    //   .then(async (response) => {
+    //     let json = await response.json();
+    //     if (json.success) {
+    //       setIsSuccess(true);
+    //       setMessage(json.message);
+    //       e.target.reset();
+    //       reset();
+    //     } else {
+    //       setIsSuccess(false);
+    //       setMessage(json.message);
+    //     }
+    //   })
+    //   .catch((error) => {
+    //     setIsSuccess(false);
+    //     setMessage("Client Error. Please check the console.log for more info");
+    //     console.log(error);
+    //   });
   };
 
   return (
@@ -121,12 +125,12 @@ export default function PopupWidget() {
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
+                        value={`${userName} sent a message from 4A4B Landing`}
                         {...register("subject")}
                       />
                       <input
                         type="hidden"
-                        value="Nextly Template"
+                        value="Landing Page"
                         {...register("from_name")}
                       />
                       <input
@@ -149,7 +153,7 @@ export default function PopupWidget() {
                             required: "Full name is required",
                             maxLength: 80,
                           })}
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 dark:text-gray-700 rounded-md focus:outline-none focus:ring   ${
                             errors.name
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -179,7 +183,7 @@ export default function PopupWidget() {
                             },
                           })}
                           placeholder="you@company.com"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 dark:text-gray-700 rounded-md focus:outline-none focus:ring   ${
                             errors.email
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -207,7 +211,7 @@ export default function PopupWidget() {
                             required: "Enter your Message",
                           })}
                           placeholder="Your Message"
-                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
+                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 dark:text-gray-700 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
                               : "border-gray-300 focus:border-indigo-600 ring-indigo-100"
@@ -250,14 +254,6 @@ export default function PopupWidget() {
                         className="text-xs text-center text-gray-400"
                         id="result">
                         <span>
-                          Powered by{" "}
-                          <a
-                            href="https://Web3Forms.com"
-                            className="text-gray-600"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            Web3Forms
-                          </a>
                         </span>
                       </p>
                     </form>

@@ -28,10 +28,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>4A4B - Future Technology Made Today</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="4A4B is a sample landing page made to highlight your startup"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,32 +39,28 @@ export default function Home() {
       <Navbar />
       <Hero />
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="Our services"
+        title=" Why choose us ?">
+        Experience a new level of efficiency, accuracy, and accessibility.
+         Whether you're a business looking to streamline your operations or an individual 
+         seeking a smarter, more connected lifestyle, we got you covered.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
       <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs">
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
+        pretitle="Demonstration"
+        title="Learn how we can help you grow">
+        You can check out this video from one of our clients highlighting the growth he has made and how our products eased his way to success
       </SectionTitle>
       <Video />
       <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+          Here is some feedback from our customers !
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        These are some frequently asked questions from our customers
       </SectionTitle>
       <Faq />
       <Cta />
